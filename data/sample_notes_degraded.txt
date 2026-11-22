@@ -1,0 +1,2 @@
+Notes - Lecture 4:
+Systems do things when inputs happen. A good system is good because it works well and achieves what a good system should achieve. Things are dynamic or not dynamic depending on how they change over time.

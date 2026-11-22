@@ -1,0 +1,86 @@
+{
+  "dataset_metadata": {
+    "name": "AISM-StudyNotes-Eval-10",
+    "version": "1.0",
+    "created_by": "Group 20 (Rodrigo Franco, Filipe Pina)",
+    "source_description": "Curated academic lecture summaries adapted from open-access Computer Science textbooks (Russell & Norvig, Wooldridge) and Wikipedia CC BY-SA 4.0 articles, paired with synthetic degraded/circular notes for stress testing.",
+    "license": "CC BY-SA 4.0",
+    "total_samples": 10,
+    "distribution": {
+      "valid_notes": 6,
+      "degraded_notes": 4
+    }
+  },
+  "samples": [
+    {
+      "id": "SAMPLE_01",
+      "domain": "Multi-Agent Systems",
+      "category": "valid",
+      "expected_status": "APPROVED",
+      "text": "Rational agents perceive their environment through sensors and act upon it via actuators to maximize an expected performance measure. Unlike omniscient agents, rational agents operate under partial observability and rely on percept sequences plus prior knowledge. Designing an agent requires specifying its PEAS framework: Performance measure, Environment, Actuators, and Sensors. Task environments vary along dimensions such as deterministic versus stochastic, episodic versus sequential, and single-agent versus multi-agent. In cooperative multi-agent systems, agents coordinate via standardized communication protocols like FIPA-ACL or the Contract Net Protocol to decompose tasks without centralized bottlenecks."
+    },
+    {
+      "id": "SAMPLE_02",
+      "domain": "Search Algorithms",
+      "category": "valid",
+      "expected_status": "APPROVED",
+      "text": "Uninformed search strategies explore state spaces without domain-specific cost estimates beyond the problem definition. Breadth-First Search (BFS) expands the shallowest unexpanded node using a FIFO queue, guaranteeing completeness and optimality when step costs are uniform, though with exponential memory complexity. Depth-First Search (DFS) uses a LIFO stack to explore deep branches first, requiring linear memory but risking infinite loops in cyclic graphs. Informed search strategies such as A* combine the exact path cost g(n) from the start node with an admissible heuristic estimate h(n) to the goal, guaranteeing optimal solutions when h(n) never overestimates true cost."
+    },
+    {
+      "id": "SAMPLE_03",
+      "domain": "Computer Networks",
+      "category": "valid",
+      "expected_status": "APPROVED",
+      "text": "The Domain Name System (DNS) translates human-readable domain names into IP addresses through a hierarchical distributed database. Resolution typically begins at a local recursive resolver, which queries root name servers, Top-Level Domain (TLD) servers, and finally authoritative name servers. DNS records include A records mapping hostnames to IPv4 addresses, AAAA records for IPv6, CNAME records for canonical aliases, and MX records specifying mail exchange servers. To reduce network latency and query load, resolvers cache responses locally according to the Time-To-Live (TTL) value defined in each resource record."
+    },
+    {
+      "id": "SAMPLE_04",
+      "domain": "Database Systems",
+      "category": "valid",
+      "expected_status": "APPROVED",
+      "text": "Relational database transactions must satisfy the ACID properties to guarantee data integrity despite concurrent access or system failures. Atomicity ensures that a transaction executes as an all-or-nothing unit, rolling back partial changes upon failure. Consistency preserves database invariants and integrity constraints before and after execution. Isolation prevents concurrent transactions from interfering with each other, often enforced via Two-Phase Locking or Multi-Version Concurrency Control. Durability guarantees that once a transaction commits, its effects persist permanently in non-volatile storage through Write-Ahead Logging."
+    },
+    {
+      "id": "SAMPLE_05",
+      "domain": "Machine Learning",
+      "category": "valid",
+      "expected_status": "APPROVED",
+      "text": "Supervised learning algorithms infer a mapping function from labeled input-output pairs, split into classification for discrete targets and regression for continuous outputs. Overfitting occurs when a model memorizes noise in the training set, resulting in low training error but poor generalization on unseen test data. Regularization techniques such as L1 (Lasso) and L2 (Ridge) penalize large parameter weights to constrain model complexity. Cross-validation partitions the dataset into k folds to estimate out-of-sample performance reliably, while confusion matrices quantify precision, recall, and F1-score in imbalanced classification tasks."
+    },
+    {
+      "id": "SAMPLE_06",
+      "domain": "Operating Systems",
+      "category": "valid",
+      "expected_status": "APPROVED",
+      "text": "A deadlock occurs in concurrent operating systems when a set of processes is permanently blocked because each process holds a resource and waits for another resource held by a peer. According to the Coffman conditions, deadlock requires four simultaneous conditions: mutual exclusion, hold and wait, no preemption, and circular wait. Operating systems handle deadlocks through prevention (invalidating at least one Coffman condition), avoidance using algorithms like the Banker's Algorithm to ensure safe resource allocation states, or detection and recovery via resource-allocation graphs and process termination."
+    },
+    {
+      "id": "SAMPLE_07",
+      "domain": "Degraded - Circular Definition",
+      "category": "degraded",
+      "expected_status": "PEDAGOGICAL_FAILURE",
+      "text": "Lecture notes: Systems do things when inputs happen. A good system is good because it works well and achieves what a good system should achieve. Things are dynamic or not dynamic depending on how they change over time."
+    },
+    {
+      "id": "SAMPLE_08",
+      "domain": "Degraded - Fragmented Keywords",
+      "category": "degraded",
+      "expected_status": "PEDAGOGICAL_FAILURE",
+      "text": "Exam topics: agents, graphs, nodes, memory, fast, network packets, database tables, check slides 12 to 18 before Friday."
+    },
+    {
+      "id": "SAMPLE_09",
+      "domain": "Degraded - Single Sentence",
+      "category": "degraded",
+      "expected_status": "PEDAGOGICAL_FAILURE",
+      "text": "Artificial intelligence involves algorithms that process data to make decisions in software applications."
+    },
+    {
+      "id": "SAMPLE_10",
+      "domain": "Degraded - Off-topic / Noise",
+      "category": "degraded",
+      "expected_status": "PEDAGOGICAL_FAILURE",
+      "text": "Reminder: group meeting at 14:00 in room B2. Bring laptops and chargers. Coffee break after the presentation."
+    }
+  ]
+}

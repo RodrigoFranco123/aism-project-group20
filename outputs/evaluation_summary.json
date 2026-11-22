@@ -1,0 +1,34 @@
+{
+  "model": "llama3.2:latest",
+  "completed_samples": 2,
+  "multi_agent_audit_accuracy_pct": 100.0,
+  "baseline_audit_accuracy_pct": 0.0,
+  "multi_agent_schema_compliance_pct": 100.0,
+  "baseline_schema_compliance_pct": 0.0,
+  "multi_agent_avg_latency_s": 428.57,
+  "baseline_avg_latency_s": 53.42,
+  "details": [
+    {
+      "id": "SAMPLE_01",
+      "category": "valid",
+      "expected_status": "APPROVED",
+      "multi_agent_status": "APPROVED",
+      "multi_agent_correct": true,
+      "multi_agent_latency_s": 467.22,
+      "baseline_predicted": "PEDAGOGICAL_FAILURE",
+      "baseline_correct": false,
+      "baseline_latency_s": 90.086
+    },
+    {
+      "id": "SAMPLE_02",
+      "category": "valid",
+      "expected_status": "APPROVED",
+      "multi_agent_status": "APPROVED",
+      "multi_agent_correct": true,
+      "multi_agent_latency_s": 389.92,
+      "baseline_predicted": "PEDAGOGICAL_FAILURE",
+      "baseline_correct": false,
+      "baseline_latency_s": 16.758
+    }
+  ]
+}
